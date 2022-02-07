@@ -1,0 +1,15 @@
+version: '3'    
+
+services:
+
+  alura-api:
+    image: node:15
+    container_name: alura-api
+    env_file: .env
+    restart: always
+    working_dir: /home/node/app
+    command: npm start
+    ports:
+      - 8081:${API_PORT}
+    volumes:
+      - ./:/home/node/app
