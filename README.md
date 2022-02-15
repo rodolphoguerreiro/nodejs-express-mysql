@@ -29,15 +29,10 @@ $ npm start
 # Or optional run the docker-compose command  :
 $ docker-compose up -d
 ```
-
 ## Technologies
 ..for development environment
 * [API-Rest] : http://localhost:8081
-* [Swagger] : http://localhost:8082
-* [MailHog] : http://localhost:8025
 
 ## Commands
 #### Docker
 Use the command `docker logs api-rest -f` for viewing logs containers
-#### Swagger
-Install the [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer) package in VS Code IDE and Press Shift + Alt + P
