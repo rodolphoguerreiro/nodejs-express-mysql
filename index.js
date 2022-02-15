@@ -1,5 +1,10 @@
-const _express = require('./config/_express')
+const init = require('./config/init')
 
-const app = _express()
+try {
+    const app = init()
 
-app.listen(3000, () => console.log("servidor rodando na porta 3000"))
+    app.listen(3000, () => console.log("servidor rodando na porta 3000"))
+
+} catch (error) {
+    console.error('Error:', error);
+}
